@@ -1,0 +1,1404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+/* background me image lagai hai mainbg */
+.mainbg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/black\ gbbjn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0.1px;
+    
+}
+/* unknown overlay front page  */
+
+/* nav bar  */
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw ;
+    transition: 0.25s ease;
+    z-index: 1;
+    position: absolute;
+}
+/* logo ka naem box1 hai (logo h1 me hai)and (span me O hai) */
+.logo{
+    width: 19vw;
+    height: 4vw;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+.box1{
+    width: 8vw;
+    height: 10vh;
+    /* background-color: mediumaquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* font-family: jost; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1.4vw;
+}
+.box1>h1{
+    /* background-color: red; */
+    letter-spacing: 1.5px;
+    color: rgb(0, 0, 0);
+}
+/* logo me colored O span tag se banaya */
+.box1>span{
+    width: 1.7vw;
+    height: 3.7vh;
+    border-top: 0.4vw solid red ;
+    border-bottom: 0.4vw solid rgb(166, 0, 255);
+    border-left: 0.4vw solid rgb(69, 183, 3);
+    border-right: 0.4vw solid rgb(255, 218, 6);
+    margin-right: 1%;
+    border-radius: 50%;
+    rotate: 45deg;
+}
+
+/* nav bar ki ul list */
+nav ul{
+    list-style: none;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  40vw;
+    height: 100vh;
+    padding: 1vh 3.5vw;
+    margin-left: -19vw;
+    color: rgb(0, 0, 0);
+}
+nav ul li{
+    font-size: 1.1vw;
+    font-family: roboto;
+    transition: 0.3s;
+    padding: 5px 0.8rem;
+    border-radius: 50px;  
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+/* nav ki regisgter button */
+nav button{
+    font-family: roboto;
+    font-family: 50vw;
+    font-weight: 500;
+    font-size: 0.85rem;
+    background-color: rgb(255, 255, 255);
+    width: 6vw;
+    height: 5vh;
+    border-radius: 2vw;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+nav button:hover{
+    background-color: black;
+    color: white;
+}
+.menu{
+    width: 0%;
+    opacity: 0;
+}
+/* front page */
+.frontpage{
+    /* background-color: rgba(255, 0, 0, 0.458); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    padding: 0.1px;
+}
+/* front page ka left box and left box heading */
+.fpbleft{
+    background-color: rgb(201, 199, 199);
+    width: 45vw;
+    height: 90vh;
+    margin-top: 4.66vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.fpbleft>h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.6vmax;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.429);
+    /* background-color: red; */
+    width: 27vw;
+    height: 55vh;
+    padding: 0.5vh 3vw;
+    margin-top: -2vh;
+    
+
+}
+.fpbleft>h1 span{
+    color: black;
+}
+/* front page me left box me email form box and sign up button */
+.fpbleft form{
+width: 19vw;
+height: 7vh;
+display: flex;
+border-radius: 50px 0 0 50px;
+border: none;
+margin-left: -6vh;
+margin-top: 1vh;
+/* background-color: red; */
+
+}
+form input{
+    width: 100%;
+    height: 7vh;
+    padding: 2vh 2vw;
+    border-radius: 50px 0 0 50px;
+    border: none; 
+    
+}
+.fpbleft form button{
+    width: 8vw;
+    height: 7vh;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    background-color:rgb(0, 0, 0);
+    /* background-color: #F11803; */
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    
+}
+.fpbleft form button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/* front page left box last lorem */
+#frontplorem{
+    color:rgba(0, 0, 0, 0.901);
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rebeccapurple; */
+    width: 30vw;
+    font-weight: 900;
+    font-size: 1vw;
+    margin-left: 2vh;
+    margin-top: 5vh;
+    
+}
+/* front page ki bg image  */
+.fpbright{
+    background-color: lemonchiffon;
+    width: 55vw;
+    height: 90vh;
+    margin-top: 4.7vw;
+    background-image: url(https://images.unsplash.com/photo-1599687351724-dfa3c4ff81b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+
+
+}
+/* front page ke image me round circle hai */
+.circle1{
+    background-color:#FFC800;
+    width: 150px;
+    height: 75px;
+    border-radius: 0 0 150px 150px;
+    right: 1%;
+    position: absolute;
+
+}
+.circle2{
+    background-color:#ffc80080;
+    width: 150px;
+    height: 150px;
+    margin-top: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+}
+
+/* page 2  */
+.page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.153); */
+    font-family: 'Poppins', sans-serif;
+    padding: 0.1px;
+
+}
+#secondphead{
+    width: 30%;
+    height: 12%;
+    /* background-color: green; */
+    margin-top: 4%;
+    margin-left: 35%;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+/* page 2 ke andar two boxes */
+.twoboxs{
+    width: 100%;
+    height: 100%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0% ;
+
+   
+}
+.p2left{
+    width: 40%;
+    height: 79.4%;
+    margin-left: 9%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2% 0%;
+    background-color: rgb(207, 207, 207);
+    /* box-shadow: 0 0 0.2rem white; */
+    transition: 0.2s;
+}
+/* page 2 me left box me 3 div hai b1one, b1two, b1three */
+.b1one{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    background-color:rgb(0, 144, 0);
+    color: white;
+    width: 15%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    
+}
+/* left box me b1two ke ander checkbox */
+.b1two{
+    /* background-color:rgba(0, 128, 0, 0.17); */
+    padding: 18px 15px;
+    height: 70%;
+    width: 95%;
+    margin-top: 2%;
+
+}
+.checkbox{
+    margin-right: 3%;
+    width: 18px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+
+}
+/* checkbox text */
+#b1lines{
+    background-color: #ffbb00;
+    width: 100%;
+    height: 3em;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: -1%; 
+    transition: 0.4s;
+}
+#b1lines:hover{
+    background-color: #ffa200;
+    word-spacing: 1px;
+    text-decoration: line-through;
+}
+/* left box me b1three id name b1lastlorem */
+#b1lastlorem{
+    /* background-color: red; */
+    padding: 0 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color:rgba(0, 0, 0, 0.896);
+    
+}
+/* page 2 ka right box */
+.p2right{
+    width: 40%;
+    height: 79.4%;
+    background-color:#CFCFCF;
+    margin-right: 9%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0% ;
+
+}
+/* same 2 div hai b2one, b2two, b2three */
+.b2one{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    background-color:#009000;
+    color: white;
+    width: 15%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    
+}
+
+/* b2two me scrollbox bana hai  */
+.b2two{
+    width: 100%;
+    height: 70%;
+    /* background-color: blue; */
+    display: flex;
+    padding-top: 2.5%;
+    margin-top: 1%;
+    overflow-x: auto;
+}
+.b2two .scrollbox{
+    min-width: 50%;
+    height: 100%;
+    /* background-color: #FFA500; */
+    margin-right: 2%;
+    margin-left:1%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3.5% 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    transition: 0.3s ease;
+    
+}
+.b2two::-webkit-scrollbar{
+    width: 0;
+}
+.scrollbox:hover{
+    /* border: 1px solid #ffbb00; */
+    /* color: white; */
+    
+    background-image: url(https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* boxes ke andar image hai */
+.sb1{
+    background-image: url(/4880206.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    cursor: pointer;
+}
+.sb2{
+    background-image: url(/4880206.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    cursor: pointer;
+}
+.scrollbox h2{
+    font-size: 18px;
+    font-weight: 900;
+    /* background-color: green; */
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.81);
+}
+.day{
+    background-color: #ffbb00;
+    width: 25%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+}
+/* right box ka last lorem line  */
+.b2three{
+    padding: 0 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color:rgba(0, 0, 0, 0.896);
+}
+
+
+/* page 3 text and phone box */
+.page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 0, 0, 0.566); */
+    padding: 0.1px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#thirdphead{
+    /* background-color: #FFA500;  */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    width: 35%;
+    margin-top: 9%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+
+}
+.thirdpbox1{
+    background-color:#ffbb00;
+    height: 60%;
+    width: 82%;
+    border-radius: 15px;
+    margin-top: 2.3%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* third page ka box 1 text box */
+.box1first{
+    width: 50%;
+    height: 100%;
+    background-color: #ffbb00;
+    border-radius: 15px 0 0 15px;
+}
+#page3b1para{
+    font-size: 35px;
+    /* background-color: green; */
+    width: 75%;
+    margin-top: 5%;
+    color: rgba(0, 0, 0, 0.838);
+    margin-left: 12%;
+    font-weight: 900;
+    -webkit-text-stroke: 0.4px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2px;
+}
+#page3b1para2{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: blueviolet; */
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 12%;
+    font-weight: 900;
+    -webkit-text-stroke: 0.4px;
+    letter-spacing: 0.2px;
+}
+/* third page ka box 2 phone box */
+.box1second{
+    width: 50%;
+    height: 100%;
+    background-color: #ffbb00;
+    border-radius:0 15px 15px 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-top: 1%;
+    cursor: pointer;
+
+}
+.phone{
+    width: 65%;
+    height: 95%;
+    background-color: white;
+    border-radius:  15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone .nav{
+    /* background-color:lightcoral; */
+    width: 100%;
+    height: 10%;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+.phone .wifiicons{
+    /* background-color: lightgreen; */
+    width: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+/* phone ke andar week scroller */
+.weekscroll{
+    width: 92%;
+    height: 12%;
+    background-color: #e7e7e7;
+    margin-top: 4%;
+    margin-left: 2px;
+    border-radius: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-x: auto;
+    
+}
+.weekscroll::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.weekscroll span{
+    width: 120px;
+    /* background-color: aqua; */
+    margin: 0 2%;
+    /* margin-top: 5%; */
+    letter-spacing: 0.5px;
+    height: 30px;
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.weekscroll span:hover{
+    background-color: white;
+}
+/* phone text heading */
+.phonehead{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    /* background-color: pink; */
+    margin-top: 3%;
+}
+/* phone ke andar box */
+.phonebox{
+    width: 86%;
+    height: 40%;
+    background-color:#ff311e;
+    margin-top: 3%;
+    border-radius: 20px;
+    margin-left: 1px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;   
+}
+.boxtxt{
+    width: 70%;
+    height: 100%;
+    /* background-color: #FFA500; */
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    /* justify-content: center; */
+}
+.boxtxt>h2{
+    font-size: 20px;
+    font-weight: 900;
+    width: 90%;
+    height: 40%;
+    margin-top: 6%;
+    color: rgb(255, 255, 255);    
+    /* background-color:blue; */
+}
+/* phone ke andar box ke andar fill animation */
+#fillline{
+    width: 90%;
+    height: 3.5%;
+    background-color: rgb(199, 198, 198);
+    border-radius: 50px;
+    margin-top: 23%;
+}
+.fill{
+    max-width: 80%;
+    height: 100%;
+    background-color: #FFC800;
+    border-radius: 50px;
+    position: relative;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: fillper 2s linear 1s infinite both ;
+}
+.fill::before{
+    content: "90%";
+    position: absolute;
+    right: 0;
+    top: -3.2em;
+    padding: 4px 6px;
+    background-color: white;
+    color: #ff311e;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    transform: translateX(20%);
+
+}
+.fill::after{
+    content: "";
+    position: absolute;
+    right: 6.5%;
+    top: -1.3em;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    transform: translateX(50%) rotate(45deg) ;
+
+}
+@keyframes fillper {
+   from{
+    width: 0;
+   } 
+   to{
+    width: 100%;
+   }
+}
+/* phone ke andar box ke andar right side Days scroller  */
+.boxscrol{
+    width: 30%;
+    height: 100%;
+    /* background-color:#FFA500; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:0 20px 20px 0;
+    overflow-y: auto;
+}
+.boxscrol::-webkit-scrollbar{
+    width: 0;
+}
+.boxscrol>span{
+    font-weight: 900;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: #ff311e;
+    width: 72%;
+    height: 22%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.boxscrol>span:hover{
+    opacity: 100%;
+}
+.phone>button{
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #E7E7E7;
+    transition: 0.2s;
+}
+.phone>button:hover{
+    background-color: black;
+    color:#E7E7E7;
+}
+
+/* page 4 */
+.page4{
+    width: 100%;
+    height: 70%;
+    /* background-color:rgba(13, 255, 0, 0.741); */
+    padding: 0.1px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* page 4 me main box  */
+.forthpbox2{
+    /* background-color: cornflowerblue; */
+    height: 86%;
+    width: 82%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* forth page ka first orange box  */
+.box2first{
+    width: 49.1%;
+    height: 100%;
+    background-color: #FF311E;
+    border-radius: 15px;
+}
+#page4b2para{
+    font-size: 35px;
+    /* background-color: green; */
+    width: 75%;
+    margin-top: 5%;
+    color: white;
+    margin-left: 12%;
+    font-weight: 900;
+    font-family: Poppins;
+    letter-spacing: 0.2px;
+}
+#page4b2para2{
+    font-size: 15px;
+    font-family: Poppins;
+    /* background-color: blueviolet; */
+    color: white;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 12%;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+.roundbox{
+    background-color:transparent;
+    width: 100%;
+    height: 53%;
+    border-radius: 0 0 15px 15px ;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.roundbox::-webkit-scrollbar{
+    height: 0;
+}
+.circleper{
+    width: 300px;
+    height: 300px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,160px);
+    margin-top: 50px;
+    border-radius: 50%;
+}
+.circlefiller,
+.circlefill{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    animation: fil ease-in-out 3s infinite both;
+}
+.circlefiller{
+    clip: rect(0px, 300px, 300px, 150px);
+}
+.circlefill{
+    clip: rect(0px, 150px, 300px, 0px);
+    /* background-color: #FFC800; */
+    background-color: #ffbb00;
+}
+
+@keyframes fil{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(145deg);
+    }
+}
+.circleinsideper{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color:rgb(252, 76, 60);
+    z-index: 1;
+    margin-left: -36%;
+    margin-top: -0.5%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* position: absolute; */
+    /* left: 4%; */
+}
+.circleinsideper>h4{
+    color: #FFC800;
+    margin-top: 50%;
+    font-family: poppins;
+    font-weight: 900;
+    font-size: 12px;
+    background-color: white;
+    padding: 4px 6px;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    z-index: 100;
+}
+.circleinsideper>img{
+    width: 80px;
+    height: 80px;
+    /* background-color: red; */
+    /* margin-left: 5%; */
+    position: absolute;
+    top: 27.5%;
+    
+}
+.roundbox>img{
+    position: absolute;
+    right: 7%;
+    top: 45%;
+    width: 70px;
+    height: 70px;
+    rotate: -20deg;
+}
+.roundbox>img:nth-child(2){
+    left: 10%;
+    top: 15%;
+    width: 70px;
+    height: 70px;
+    rotate: 20deg;
+}
+
+/* forth page second box */
+.box2second{
+    width: 49.1%;
+    height: 100%;
+    border-radius: 15px;
+    background-image: url(/top-view-announcement-concept-with-megaphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#page4b2firstpara{
+    font-size: 35px;
+    /* background-color: green; */
+    width: 75%;
+    margin-top: 5%;
+    color: white;
+    margin-left: 12%;
+    font-weight: 900;
+    font-family: Poppins;
+    letter-spacing: 0.2px;
+}
+#page4b2secondpara2{
+    font-size: 15px;
+    font-family: Poppins;
+    /* background-color: blueviolet; */
+    color: rgb(255, 255, 255);
+    width: 70%;
+    margin-top: 1.5%;
+    margin-left: 12%;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+
+.box2insidebox{
+    width: 90%;
+    height: 55%;
+    /* background-color: rgba(255, 0, 0, 0.57); */
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 1%;
+}
+.box2insidebox>span{
+    background-color: rgba(255, 255, 255, 0.555);
+    color: rgba(0, 0, 0, 0.825);
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 900;
+    padding: 1.5% 3%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.box2insidebox>span:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.box2insidebox>span:nth-child(1){
+    margin-left: -35%;
+}
+.box2insidebox>span:nth-child(2){
+    margin-left:-6%;
+}
+.box2insidebox>span:nth-child(3){
+    margin-left: 30%;
+}
+/* page no 5 commants page */
+.page5{
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    padding: 0.1px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.page5>h2{
+    /* background-color: #FFA500;  */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    width: 35%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-top: 1%;
+}
+/* page 5 main box */
+.comments{
+    width: 82.5%;
+    height: 86%;
+    /* background-color: white; */
+    border-radius: 15px;
+    margin-top: 2.4%;
+}
+/* page 5 main box divide into two parts firstb and secondb */
+
+.main-2boxs{
+    /* background-color: white; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.page5firstb{
+    border-radius: 15px 15px 0 0 ;
+    padding-bottom: 0.6%;
+    
+}
+.page5secondb{
+    border-radius: 0 0 15px 15px;
+    padding-top: 0.6%;
+
+}
+/* page 5 ke comment  boxes */
+.comment{
+    width: 32.6%;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1.8% 1.5%;
+
+}
+.comment>h3{
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: 15px;
+    /* background-color: green; */
+    height: 65%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    word-spacing: 0.3px;
+    -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.800);
+}
+.comment>.imgicon{
+    /* background-color: #FFDE00; */
+    padding: 2%;
+    width: 100px;
+    height: 50px;
+    display: flex;
+
+}
+.name-work h5{
+    width: fit-content;
+    /* background-color: rgba(0, 0, 255, 0.485); */
+    margin-left: 2%;
+    font-family: Poppins;
+    /* font-weight: 900; */
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.900);
+}
+.name-work>p{
+    width: fit-content;
+    /* background-color: rgba(0, 0, 255, 0.427); */
+    color: rgba(0, 0, 0, 0.750);
+    margin-left: 2%;
+    font-family: Poppins;
+    font-weight: 900;
+    font-size: 13px; 
+}
+/* page 6 faq box page */
+.page6{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(251, 6, 128, 0.616); */
+    padding: 0.1px;  
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between; */
+}
+.page6 .faqbox{
+    width: 100%;
+    height: 80.7%;
+    background-color:#232323;
+    margin-top: 9%;
+    display: flex;
+}
+/* faq box divide into 2 boxes faqtextbox and faqlinebox */
+.faqbox .faqtextbox{
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+    font-family: Poppins;
+    font-weight: 900;
+}
+.faqtextbox>h1{
+    /* background-color: #ff311e; */
+    width: 50%;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 3%;
+    color: white;
+}
+.faqtextbox .page6button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    width: 27%;
+    padding: 8px 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px black;
+    margin-right: 5%;
+}
+/* right side box faqlinebox */
+.faqbox .faqlinebox{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.faqlinebox .lineboxs{
+    margin-left: 5%;
+    margin-top: 2%;
+    /* background-color: yellow; */
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    padding-right: 10px;
+    width: 70%;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+.faqlinebox .linebox5{
+    border: none;
+}
+/* page7 */
+.lastbgimage{
+    width: 100%;
+    height: 100%;
+    background-image: url(/sl_0210121_40570_43.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0.1px;
+}
+.page7{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 105, 180, 0.701); */
+    /* padding: 0.1px; */
+}
+/* download side up side  box 1 */
+.page7box1{
+    width: 100%;
+    height: 55%;
+    /* background-color: green; */
+    background-image: url(/abstract-pink-seamless-yellow-background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    font-family: Poppins;
+    font-size: 27px;
+    gap: 10px;
+    color: white;
+}
+.page7box1>p{
+    font-size: 13px;
+    /* background-color: red; */
+    width: 40%;
+}
+.page7box1 .playstorebutton{
+    width: 20%;
+    /* height: 15%; */
+    display: flex;
+    justify-content: space-between;
+}
+.playstorebutton button{
+    width: 45%;
+    /* height: 80%; */
+    padding: 4% 8%;
+    margin-top: 3%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    border: none;
+    transition: 0.1s;
+}
+button:nth-child(2){
+    width: 45%;
+    padding: 4% 6%;
+    border-radius: 50px;
+}
+button>h5{
+    margin-top: 2px;
+}
+.playstorebutton button:hover{
+    color: #FF4F9D;
+    background-color: black;
+    cursor: pointer;
+}
+/* box 2 footer side down side */
+.page7box2{
+    width: 100%;
+    height: 45%;
+    background-color:white;
+}
+/* box 2 me 2 box hai ek uper ek nich option box and facebookbox */
+.page7box2 .optionsbox{
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+}
+/* optionsbox ke ander 2 box banae hai boxfirst and boxsecond */
+.optionsbox .boxfirst{
+    /* background-color: blue; */
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* boxfirst me 2 box hai logolast jo left side hai or bfoptions jo right side me hai */
+.boxfirst .logolast{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    
+}
+.logolast>img{
+    margin-top: 19%;
+    margin-left: 12%;
+}
+.boxfirst .bf-options{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+}
+.alllist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    margin-top: 15%;
+    width: 50%;
+    height: 56%;
+    gap: 6%;
+    padding: 4% 5%;
+    font-family: Poppins;
+    font-size: 0.73rem;
+    font-weight: 900;
+    color: rgb(53, 53, 53);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.alllist li:nth-child(1){
+    /* -webkit-text-stroke: 0.9px black; */
+    font-size: 1rem;
+    font-weight: 900;
+    color: black;
+    word-spacing: 2px;
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+.alllist li:nth-child(1):hover{
+    color: black;
+}
+.alllist li{
+    transition: 0.2s;
+}
+.alllist li:hover{
+    color: #FF5EA8;
+
+}
+.bf-options .bfoption1{
+width: 50%;
+height: 100%;
+cursor: pointer;
+/* background-color: red; */
+}
+.bfoption1 .one1{
+    /* background-color: red; */
+    /* margin-left: 97%; */
+    cursor: pointer;
+
+}
+.bf-options .bfoption2{
+    width: 50%;
+    height: 100%;
+    /* background-color:yellow ; */
+}
+.bfoption2 .two2{
+    /* background-color: red; */
+    margin-left: 60%;
+}
+
+/* option box ka right side wala box boxsecond */
+.optionsbox .boxsecond{
+    background-color:white;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.boxsecond .bsoption1{
+    width: 40%;
+    height: 100%;
+    /* background-color: goldenrod; */
+}
+.bsoption1 .three3{
+    /* background-color: red; */
+    margin-left: 20%;
+    margin-top: 13%;
+}
+.boxsecond .bsoption2{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.bsoption2 .four4{
+    /* background-color: red; */
+    margin-left: 48%;
+    margin-top: 10%;
+
+}
+.four4 li{
+    margin-left: 1rem;
+
+}
+
+/* sabse niche wali nav social media links wali  */
+.page7box2 .facebookiconbox{
+    width: 97%;
+    height: 30%;
+    /* background-color: lightgreen; */
+    border-top: 2px solid rgb(49, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.5%;
+}
+.facebookiconbox .links{
+    width: 25%;
+    height: 88%;
+    /* background-color: red; */
+    display: flex;
+    padding: 1% 1%;
+
+}
+.links i{
+    width: 16%;
+    height: 100%;
+    font-size: 2rem;
+    margin-left: 3%;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    border: 3px solid rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.links i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.incline{
+    font-family: Poppins;
+    padding: 1%;
+    font-size: 0.8rem;
+    
+}
+
